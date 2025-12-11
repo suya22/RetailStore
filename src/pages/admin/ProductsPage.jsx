@@ -161,7 +161,7 @@ function ProductsPage() {
                     <tr key={product._id} className="hover:bg-gray-50">
                       <td className="px-6 py-4">
                         <div className="flex items-center gap-3">
-                          <div className="w-12 h-12 rounded-lg bg-gray-100 overflow-hidden flex-shrink-0">
+                          <div className="w-12 h-12 rounded-lg bg-gray-100 overflow-hidden shrink-0">
                             {imageUrl ? (
                               <img
                                 src={imageUrl || "/placeholder.svg"}
@@ -178,7 +178,7 @@ function ProductsPage() {
                         </div>
                       </td>
                       <td className="px-6 py-4 text-gray-600">{product.category}</td>
-                      <td className="px-6 py-4 text-gray-900 font-medium">${product.price.toFixed(2)}</td>
+                      <td className="px-6 py-4 text-gray-900 font-medium">₹{product.price.toFixed(2)}</td>
                       <td className="px-6 py-4">
                         <span className={`font-medium ${product.stock <= 10 ? "text-red-600" : "text-gray-900"}`}>
                           {product.stock}

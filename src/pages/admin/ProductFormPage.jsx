@@ -212,7 +212,7 @@ function ProductFormPage() {
             <div className="grid grid-cols-2 gap-4">
               <div>
                 <label htmlFor="price" className="label">
-                  Price ($) *
+                  Price (₹) *
                 </label>
                 <input
                   type="number"
@@ -282,7 +282,7 @@ function ProductFormPage() {
               <label className="label">Product Image</label>
               <div className="flex items-start gap-4">
                 {(imagePreview || existingImage) && (
-                  <div className="w-24 h-24 rounded-lg bg-gray-100 overflow-hidden flex-shrink-0">
+                  <div className="w-24 h-24 rounded-lg bg-gray-100 overflow-hidden shrink-0">
                     <img src={imagePreview || existingImage} alt="Preview" className="w-full h-full object-cover" />
                   </div>
                 )}

@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 import { fetchDashboardStats, fetchLowStockProducts } from "../../services/api"
 import StatusBadge from "../../components/admin/StatusBadge"
-import { SpinnerIcon, ShoppingBagIcon, CurrencyDollarIcon, PackageIcon, ExclamationIcon } from "../../components/Icons"
+import { SpinnerIcon, ShoppingBagIcon, IndianRupeeIcon, PackageIcon, ExclamationIcon } from "../../components/Icons"
 
 function StatCard({ title, value, icon: Icon, color, subtitle }) {
   return (
@@ -73,8 +73,8 @@ function DashboardPage() {
         <StatCard title="Today's Orders" value={stats.todayOrders} icon={ShoppingBagIcon} color="bg-blue-500" />
         <StatCard
           title="Today's Revenue"
-          value={`$${stats.todayRevenue.toFixed(2)}`}
-          icon={CurrencyDollarIcon}
+          value={`₹${stats.todayRevenue.toFixed(2)}`}
+          icon={IndianRupeeIcon}
           color="bg-green-500"
         />
         <StatCard
