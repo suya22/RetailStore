@@ -64,7 +64,7 @@ function HomePage() {
       {/* Promo Banner */}
       <div className="bg-primary-600 text-white p-4 rounded-sm mb-4 flex items-center justify-between">
         <div>
-          <h2 className="text-lg font-bold">Welcome to DesiMart</h2>
+          <h2 className="text-lg font-bold">Welcome to RetailHub</h2>
           <p className="text-sm text-primary-100">India's favorite online shopping destination</p>
         </div>
         <div className="hidden md:flex items-center gap-6 text-sm">
@@ -81,7 +81,7 @@ function HomePage() {
 
       <div className="flex gap-4">
         {/* Sidebar Filters */}
-        <aside className="hidden lg:block w-56 flex-shrink-0">
+        <aside className="hidden lg:block w-56 shrink-0">
           <div className="card p-4 sticky top-20">
             <h3 className="font-bold text-gray-900 mb-3 pb-2 border-b text-sm uppercase tracking-wide">Filters</h3>
 

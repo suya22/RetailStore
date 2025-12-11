@@ -16,7 +16,7 @@ function Header() {
           {/* Logo */}
           <Link to="/" className="shrink-0">
             <div className="flex flex-col">
-              <span className="text-2xl font-bold text-white italic">DesiMart</span>
+              <span className="text-2xl font-bold text-white italic">RetailHub</span>
               <span className="text-[10px] text-yellow-300 italic -mt-1">
                 Explore <span className="text-yellow-400">Plus</span>
               </span>
